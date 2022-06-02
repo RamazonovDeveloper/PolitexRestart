@@ -1,0 +1,84 @@
+.toggle{
+    // flex: ;
+    top: 325px;
+    left: 129px;
+    width: 86%;
+    position: absolute;
+    z-index: 10;
+    padding: 30px 100px 30px 150px ;
+    display: flex;
+    border-radius: 20px;
+    margin: 0px 50px 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    background: #FFFFFF;
+    background-image: url(../../../assets/icons/nav-tog-bac.svg);
+    background-repeat: no-repeat;
+    background-position: 93% 50%;
+    box-shadow: 0px 4px 13px rgba(27, 25, 25, 0.15);
+    justify-content: space-between;
+
+    &__text{
+        width: 60%;
+        // 280
+        margin-right: 80px;
+        & > h3{
+            margin-top: 20px;
+            color: #37363C;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 49px;
+        }
+        & > p{
+            margin-top: 40px;
+            text-align: justify;
+            color: #37363C;
+
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    &__menu{
+        // margin: 0;
+        // padding: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 70%;
+        padding-left: 20px;
+        // height: 300px;
+
+        & > li{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #37363C;
+            border-bottom: 1px solid #1B6B50;
+            padding: 13px;
+            justify-content: space-between;
+            // border-radius: 5px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 24px;
+
+
+            &:hover{
+                background: #1B6B50;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                color: white;
+            }
+        }
+    }
+    display: none;
+
+    &--active{
+        display: flex;
+    }
+}

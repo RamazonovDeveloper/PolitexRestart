@@ -1,0 +1,36 @@
+.top{
+    background-color: #15523D;
+    color: white;
+    display: flex;
+    // width: 100%;
+    
+    &__items{
+        margin-left: auto;
+        margin-right: 140px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 23px;
+        padding-bottom: 23px;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            & > img{
+                margin-right: 10px;
+                width: 24px;
+                // height: 15px;
+            }
+        }
+
+        & > img{
+            // margin-left: 20px;
+            width: 30px;
+            // height: 20px;
+        }
+    }
+}

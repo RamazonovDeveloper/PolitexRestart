@@ -1,0 +1,56 @@
+.technology-stars__list,
+.technology-stars__sublist {
+  max-width: 550px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.technology-stars__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.technology-stars__sublist {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  height: 0;
+  margin: -20px;
+  padding: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.technology-stars__item--open {
+  .technology-stars__sublist {
+    margin-top: 0px;
+    display: flex;
+    height: 268px;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media only screen and(max-width: 1550px) {
+  .technology-stars__item--open {
+    .technology-stars__sublist {
+      height: 220px;
+    }
+  }
+}
+
+@media only screen and(max-width: 997px) {
+  .technology-stars__item--open {
+    .technology-stars__sublist {
+      height: 166px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.nizom {
+  padding: 80px 0;
+  .title-wrap {
+    padding: 0 140px;
+    .title-little {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: #37363c;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 17px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 59px;
+      display: flex;
+      align-items: center;
+      color: #37363c;
+      margin-bottom: 10px;
+    }
+  }
+  .line {
+    background: #efeeee;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    height: 2px;
+  }
+  .text-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 140px 60px 140px;
+    .text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      color: #37363c;
+      padding-bottom: 20px;
+    }
+    .padbot {
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.siteMap{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    // position: absolute;
+    background-color: white;
+    position: absolute;
+    z-index: 8;
+    overflow: hidden;
+    background: url(../../../assets/icons/siteMapBack.svg) no-repeat;
+    background-color: white;
+    background-position: bottom left;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__top{
+        margin: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        // margin-bottom: 20px;
+
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+
+        & > div{
+            display: flex;
+            justify-content: space-between;
+            color: #1B6B50;
+
+            & > img{
+                margin-right: 10px;
+            }
+
+            & > h3{
+                width: 600px;
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 48px;
+                display: flex;
+                align-items: center;
+            }
+            
+        }
+
+        & > p{
+            color: #37363C;
+        }
+        
+    }
+
+    &__mid{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #37363C;
+        
+        & > div{
+            padding: 25px 15px;
+            justify-content: space-between;
+            display: flex;
+            border: 2px solid #1B6B50;
+            border-right: none;
+            border-left: none;
+
+        }
+    }
+
+    &__bot{
+        margin-top: 20px;
+        flex-grow: 1;
+        display: flex;
+        // flex-direction: column;
+
+        & > ul{
+            width: 100%;
+            height: 100%;
+            border-left: 1px solid #E7E7E7;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 59px;
+            align-items: center;
+            color: #37363C;
+
+            & > li{
+                color: #737277;
+                // height: ;
+                margin: 0;
+                padding: 0;
+                
+                &:nth-child(1){
+                    color: #37363C;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+    }
+}

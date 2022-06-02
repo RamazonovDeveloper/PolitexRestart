@@ -1,0 +1,37 @@
+.grad{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    &__cards{
+        display: flex;
+        justify-content: space-between; 
+
+        &__card{
+            width: 18%;
+            text-align: center;
+            color: #37363C;
+
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 35px;
+
+            & > img{
+                width: 100%;
+            }
+
+            & > h5{
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 35px;
+                margin: 0;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            
+            & > p{
+                font-weight: 500;
+                font-size: 24px;
+                // line-height: 20px;
+            }
+        }
+    }
+}

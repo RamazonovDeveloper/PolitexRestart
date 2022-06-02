@@ -1,0 +1,52 @@
+.infos{
+    // margin-top: 50px!important;
+    background: url(../../../assets/images/infoBac.png) !important;
+    border: none;
+    border-radius: 0;
+    background-attachment: fixed!important;
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+    // padding-left: 90px!important;
+    // padding-right: 90px!important;
+    &__item{
+        display: flex;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 50px;
+        color: #FFFFFF;
+        justify-content: space-between;
+        // background: rgba(3, 3, 3, 0.445);
+        // opacity: 0.8;
+        // border: 2px solid #FFFFFF;
+        // backdrop-filter: blur(2px);
+        border-radius: 10px;
+        height: 100%;
+        padding: 130px 80px!important;
+        align-items: center;
+
+        background: rgba(3, 3, 3, 0.35);
+        // opacity: 0.6;
+        border: 5px solid #FFFFFF;
+        backdrop-filter: blur(1px);
+
+        &__single{
+            backdrop-filter: blur(-10px);
+            text-align: center;
+            color: #FFFFFF;
+            width: 200px;
+
+            & > h4{
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 50px;
+            }
+
+            & > p {
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 38px;
+            }
+        }
+        
+    }
+}

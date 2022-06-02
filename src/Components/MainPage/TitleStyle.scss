@@ -1,0 +1,100 @@
+
+.section__title{
+// z-index: 3;
+margin-top: 30px;
+margin-bottom: 80px;
+    &__container{
+        font-weight: 800;
+        font-size: 30px;
+        margin-bottom: 40px;
+        line-height: 59px;
+        // padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        color: #37363C;
+        align-items: flex-end;
+        border-bottom:2px solid #EFEEEE;
+
+        &__text{
+            // width: fit-content;
+            margin: 0;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 59px;
+            padding-bottom: 10px;
+            // color: red;
+            
+        }
+
+        &__link{
+            position: relative;
+            border: none;
+            font-family: 'Montserrat';
+            background-color: transparent;
+            color: #37363C;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 45px;
+            // height: 30px;
+
+            & > span{
+                margin-top: 10px;
+                position: absolute;
+                height: 5px;
+                width: 100%;
+                background-color: #1B6B50;
+                bottom: 0;
+                left: 0;
+                transition: 1s ease all;
+                z-index: -1;
+                border-radius: 10px;
+            }
+
+            &:hover{
+                color: white;
+                & > span{
+                    position: absolute;
+                    // border-radius: 20px 20px 0px 0px;
+                    height: 100%;
+                    object-fit: cover;
+                    // z-index: -1;
+                    transition: .3s ease-in-out all;
+
+                }
+
+
+    //             position: absolute;
+    // height: 5px;
+    // width: 100%;
+    // background-color: $accent-color;
+    // bottom: 0;
+    // left: 0;
+    // transition: 1s ease all;
+    // z-index: -1;
+    // border-radius: 10px;
+
+
+            }
+            // color: red;
+
+            // & > span{
+            //     height: 6px;
+            //     width: 100%;
+            //     background-color: #1B6B50;
+            // }
+            // border-bottom: 3px solid #1B6B50;
+            // transform: scaleY(100px);
+            
+            // &:hover{
+            //     background-color: #1B6B50;
+            //     color: white;
+            // }
+
+
+        }
+    }
+}
