@@ -2,7 +2,6 @@
 
     margin-top: 50px;
     margin-bottom: 50px;
-    height: fit-content;
     padding-bottom: 80px;
     
 
@@ -15,7 +14,7 @@
             width: 50%;
             padding-left: 5px;
             padding-top: 30px;
-            height: 700px;
+            // height: 700px;
             overflow-y: auto;
 
             &::-webkit-scrollbar {
@@ -233,5 +232,244 @@
             }
         }
 
+    }
+}
+
+@media screen and (max-width:1512px) {
+    .in{
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 80px;
+        
+    
+        &__items{
+            display: flex;
+            // flex
+            justify-content: space-between;
+    
+            &__cards{
+                width: 50%;
+                padding-left: 5px;
+                padding-top: 30px;
+                // height: 700px;
+                overflow-y: auto;
+    
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+    
+                & > .myCard{
+                    width: 80%;
+                    display: flex;
+                    // padding-right: 100px;
+                    padding: 30px 30px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 8px 16px -5px rgba(0, 0, 0, 0.247);
+                    border-radius: 10px;
+                    margin-bottom: 50px;
+                    border-bottom: 4px solid transparent;
+    
+                    &:hover{
+                        box-shadow: 0px 8px 16px -5px rgba(0, 0, 0, 0.096);
+                        background-color: #F4F8F6;
+                        // border-bottom: ;
+                        border-color: #1B6B50;
+    
+                    }
+    
+                    .myCard__img{
+                        width: 32px;
+                        // height: 30px;
+                    }
+    
+                    .myCard__text{
+                        margin-left: 47px;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 32px;
+                        color: #37363C;
+    
+                        & > h5{
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 25px;
+                        }
+    
+                        & > p{
+                            margin-top: 8px;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 18px;
+                        }
+                        
+                    }
+    
+                    // &__border{
+                    //     display: block;
+                    //     height: 4px;
+                    //     width: 98%;
+                    //     margin-top: auto;
+                    //     margin-bottom: 0;
+                    //     text-align: center;
+                    //     background-color: black;
+                    // }
+    
+    
+                }
+            }
+    
+            &__img{
+                // width: 50%;
+                width: 50%;
+                display: flex;
+                // z-index: 50;
+                // margin-left: auto;
+                // margin-right: -200px;
+                // background-size: contain;
+                // margin-right: 80px;
+                margin-top: 40px;
+                position: relative;
+                // margin-bottom: 100px;
+                // background-image: url(../../../img/interPhoto.svg);   
+                // background-repeat: no-repeat;
+                
+                & > .big{
+                    width: 90%;
+                    position: absolute;
+                    z-index: 2;
+                }
+    
+                .air{
+                    // background: #FAFAFA;
+    
+                    // z-index: 2;
+                    top: 0px;
+                    left: 50%;
+                    transform: translate(-50%);
+                    position: absolute;
+                    width: 80px;
+                    
+                }
+    
+                .airDiv{
+                    margin-top: 30px;
+                    // margin-left: 100px;
+                    width: 90%;
+                    height: 50%;
+                    border-radius: 50%;
+                    position: relative;
+                    animation: air 5s infinite;
+                    // background-color: black;
+                    // z-index: 100;
+                }
+    
+                @keyframes air {
+                    from{
+                        transform: rotate(0);
+                    }
+                    to{
+                        transform: rotate(360deg);
+                    }
+                }
+    
+    
+                & > .leaf{
+                    // height: 20px;
+                    // background: #FAFAFA;
+    
+                    z-index: 1;
+                    top: 70px;
+                    left: 190px;
+                    position: absolute;
+                    // width: 50px;
+                    animation: leaf 8s infinite;
+                }
+                @keyframes leaf {
+                    0%{
+                        transform: rotate(-5deg);
+                    }
+                    50%{
+                        transform: rotate(0deg);
+                    }
+                    100%{
+                        transform: rotate(-5deg);
+                    }
+                }
+    
+                & > .cloud{
+                    // height: 20px;
+                    // background: #FAFAFA;
+                    // width: 42px;
+    
+                    z-index: 1;
+                    top: 12%;
+                    left: 72%;
+                    position: absolute;
+                    // width: 50px;
+                    animation: cloud 4s infinite;
+                }
+                @keyframes cloud {
+                    0%{
+                        transform: rotate(5deg)
+                    }
+                    50%{
+                        transform: rotate(0deg);
+                    }
+                    100%{
+                        transform: rotate(5deg);
+                    }
+                
+                    
+    
+                }
+    
+    
+    
+                & > .rot{
+    
+                    z-index: 1;
+                    top: 0%;
+                    left: 50%;
+                    position: absolute;
+                    // width: 50px;
+                    animation: rot 8s infinite;
+                }
+                @keyframes rot {
+                    0%{
+                        transform: rotate(0deg)
+                    }
+                    // 50%{
+                    //     transform: rotate(0deg);
+                    // }
+                    100%{
+                        transform: rotate(360deg);
+                    }
+                }
+    
+    
+                & > .rot2{
+    
+                    z-index: 1;
+                    top: 32%;
+                    left: 55%;
+                    position: absolute;
+                    // width: 50px;
+                    animation: rot2 8s infinite;
+                }
+                @keyframes rot2 {
+                    0%{
+                        transform: rotate(360deg)
+                    }
+                    // 50%{
+                    //     transform: rotate(0deg);
+                    // }
+                    100%{
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+    
+        }
     }
 }
