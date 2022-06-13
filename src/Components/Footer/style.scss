@@ -237,12 +237,243 @@ $macBok: 1648px;
 }
 
 
-// .bac{
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: #1b6b50;
-//   background-size: 100% 70%;
-//   background-repeat: no-repeat;
-//   background-image: url(../../img/footbac.svg);
-//   background-position: bottom;
+@media screen and (max-width:1512px) {
+    
+.footer {
+  background-color: $accent-color2;
+  width: 100%;
+  margin-top: 30px; 
+  background-image: url(../../assets/icons/footbac.svg);
+  // background-color: red;
+  background-size: 100% 50%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.footer__top {
+  border-bottom: 1px solid #fff;
+  // background-color: $accent-color2;
+}
+
+// /.footer__top--container {
 // }
+.footer__top--list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.3s;
+  position: relative;
+  // align-items: center;
+}
+.footer__top--item {
+  width: 33%;
+  & > .pattern{
+    
+    // width: 80%;
+    // display: flex;
+    // justify-content: center;
+    
+    // align-items: center;
+    // flex-direction: column;
+    // width: 100%;
+    // height: 66px;
+    text-align: center;
+    background-color: $accent-color2;
+    border-top: none;
+    // flex-grow: 1;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    // transition: ;
+    
+    & > p{
+      display: none;
+      color: white;
+      transition: all 0.5s ease-in-out  ;
+      // width: 200px;
+    }
+
+    // &:hover{
+    //   // width: 33%;
+    //   // height: 115px;
+    //   position: absolute;
+    //   border-right: 1px solid white;
+    //     bottom: 0;
+    //     margin: 0;
+    //     &>p{
+    //     margin-top: 30px;
+    //     display: flex;
+    //     }
+    //   }
+  }
+
+  // text-align: center;
+  // width: 30%;
+  // background-color: $accent-color2;
+  // // height: ;
+  // border-top: none;
+  // flex-grow: 1;
+  // padding-top: 22px;
+  // // transition: 0.3s;
+
+  // // transition: 1s;
+  // padding-bottom: 22px;
+
+  // & > p{
+  //   display: none;
+  //   color: white;
+  // }
+
+  // &:hover{
+  //   position: absolute;
+  //   bottom: 0;
+  //   margin: 0;
+  //   &>p{
+  //   margin-top: 30px;
+  //   display: flex;
+  //   }
+  // }
+}
+
+.footer__top--item2 {
+  border: 1px solid #fff;
+  border-top: none;
+  border-bottom: none;
+}
+.footer__top--link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 45px;
+  color: #fff;
+
+  &:hover{
+    .footer__top--item{
+      background-color: red;
+    }
+  }
+
+}
+
+.footer__body--container {
+  text-align: center;
+  padding-top: 60px;
+}
+.footer__name {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.footer__nav {
+  // width: fit-content;
+  width: 600px;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: auto;
+  // margin-left: 153px;
+}
+.footer__img {
+  // margin-top: px;
+  display: block;
+  width: 220px;
+  // height: 300px;
+  align-items: center;
+}
+
+.footer__list {
+  margin: 0;
+  width: 600px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+.footer__item {
+  width: 40%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.footer__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  display: block;
+  margin: 0;
+}
+.footer__map {
+  width: 311px;
+  height: 311px;
+  border: none;
+  border-radius: 10px;
+}
+.footer__bottom {
+  background-color: $accent-color;
+  padding: 28px 0;
+}
+
+.footer__botom--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottom--text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24 px;
+  color: #fff;
+}
+
+.foot__contacts {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 59px;
+  color: #ffffff;
+
+  & > p{
+    text-align: left;
+  }
+
+  & > div {
+    display: flex;
+    & > a {
+      margin-right: 30px;
+      & > img{
+        width: 32px;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.footer__bottom--img{
+
+  height: 48px!important;
+}
+
+
+.foot__logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+
+}

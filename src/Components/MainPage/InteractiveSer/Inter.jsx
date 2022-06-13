@@ -28,14 +28,6 @@ const Inter = () => {
             <div className='in__items myContainer'>
                 <div className='in__items__cards'>
                     <div className='myCard'>
-                        <img className='myCard__img' src={mes} alt="" />
-                        <div className='myCard__text'>
-                            <h5>Korporativ Elektron Pochta</h5>
-                            <p>TDTU Korporativ elektron pochtasi</p>
-                        </div>
-                        {/* <div className='myCard__border'></div> */}
-                    </div>
-                    <div className='myCard'>
                         <img className='myCard__img' src={sms} alt="" />
                         <div className='myCard__text'>
                             <h5>Rektorning Virtual Qabulxonasi</h5>

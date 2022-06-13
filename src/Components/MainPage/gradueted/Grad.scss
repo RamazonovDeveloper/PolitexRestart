@@ -35,3 +35,44 @@
         }
     }
 }
+@media screen and (max-width:1512px) {
+    .grad{
+        margin-top: 50px;
+        margin-bottom: 70px;
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+    
+            &__card{
+                width: 22%;
+                text-align: center;
+                color: #37363C;
+    
+                font-weight: 900;
+                font-size: 30px;
+                line-height: 35px;
+    
+                & > img{
+                    width: 100%;
+                }
+    
+                & > h5{
+                    font-weight: 900;
+                    font-size: 25px;
+                    line-height: 32px;
+                    margin: 0;
+                    margin-top: 8px;
+                    margin-bottom: 3px;
+                }
+                
+                & > p{
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 26px;
+                    // line-height: 20px;
+                }
+            }
+        }
+    }
+}
